@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://bobobo-git.github.io/Nabla-fork/ -->
+<html lang="en-US" class=" tdwgptew idc0_345"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Nabla-fork</title>
+<meta name="generator" content="Jekyll v3.9.2">
+<meta property="og:title" content="Nabla-fork">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://bobobo-git.github.io/Nabla-fork/">
+<meta property="og:url" content="https://bobobo-git.github.io/Nabla-fork/">
+<meta property="og:site_name" content="Nabla-fork">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Nabla-fork">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Nabla-fork","name":"Nabla-fork","url":"https://bobobo-git.github.io/Nabla-fork/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./Nabla-fork_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Nabla-fork/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://bobobo-git.github.io/Nabla-fork/">Nabla-fork</a></h1>
+      
+
+      <p>Arranged Guide [en]</p>
+
+<h2 id="get-started-with-arranged-mode">Get started with Arranged Mode<a class="anchorjs-link " href="https://bobobo-git.github.io/Nabla-fork/#get-started-with-arranged-mode" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h1 id="what-can-you-do-with-arranged-mode">What can you do with Arranged Mode?</h1>
+
+<p>The Arranged Mode is designed to create live looping sessions and perform completely hands-free, that is, without the use of external triggers to start/stop a loop recording section, although it can also be a useful tool to speed up the loop-based music production.</p>
+
+<p>The concept is quite simple, the Audio or MIDI recorded in a “Record Item” named “Loop 1”, will be propagated to all the “Playback Items” named “Loop 1” any where in the project (it can be any other name).</p>
+
+<p><img src="./Nabla-fork_files/2cWbQLs.gif" width="799" height="455" style="-webkit-user-select: none; margin: auto;" class="jop-noMdConv"></p>
+
+<p>Each “Playback Item” can have specific properties and settings, such as volume, pan or pitch automations, reverse mode, as well as specific effect chains, additionally, being able to create automations of effects and parameters of each track. In this way, it is possible to create more complex sessions than in a traditional looping system.</p>
+
+<p><img src="./Nabla-fork_files/wXdZ9nH.gif" width="699" height="355" style="-webkit-user-select: none; margin: auto;" class="jop-noMdConv"></p>
+
+<h2 id="creating-an-arrangement">Creating an arrangement:<a class="anchorjs-link " href="https://bobobo-git.github.io/Nabla-fork/#creating-an-arrangement" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<ul>
+  <li><a href="#item-types">Item Types</a></li>
+  <li><a href="#item-creation">Item Creation</a></li>
+  <li><a href="#organizing-tracks">Organizing Tracks</a></li>
+  <li><a href="#running-nabla-looper">Running Nabla Looper</a></li>
+  <li><a href="#takes-system">Takes System</a></li>
+  <li><a href="#clear-items">Clear items</a></li>
+  <li><a href="#practice-mode">Practice mode</a></li>
+</ul>
+
+<h1 id="item-types">Item Types</h1>
+
+<p>Nabla Looper responds to four item types:</p>
+
+<ul>
+  <li>
+    <p><strong>Record</strong>:&nbsp; Defines a recording section. During its length, the recording and monitoring of the track will be active.</p>
+
+    <ul>
+      <li>
+        <p>On the toolbar:&nbsp;<img src="./Nabla-fork_files/bgf6OZH.png" alt=""></p>
+      </li>
+      <li>
+        <p>In action list: “Script: Nabla Looper Arranged Items (Toggle Record) .lua”</p>
+      </li>
+      <li>
+        <p>Item Color:&nbsp;<img src="./Nabla-fork_files/REtgPeP.png" alt=""></p>
+      </li>
+      <li>
+        <p>Take Marker: Record</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Record Mute</strong>:&nbsp; Just like the previous item, but during this section, the track will be in the “Mute” state. This is useful when we use external monitoring and only the audio of the playback items is needed.</p>
+
+    <ul>
+      <li>
+        <p>Not present in toolbar.</p>
+      </li>
+      <li>
+        <p>In action list: “Script: Nabla Looper Arranged Items (Toggle Record Mute) .lua”</p>
+      </li>
+      <li>
+        <p>Item Color:&nbsp;<img src="./Nabla-fork_files/REtgPeP.png" alt=""></p>
+      </li>
+      <li>
+        <p>Take Marker: Rec Mute</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Monitor</strong>:&nbsp; Defines a section to activate the monitoring of a track.</p>
+
+    <ul>
+      <li>
+        <p>In toolbar:&nbsp;<img src="./Nabla-fork_files/7I6LdOl.png" alt=""></p>
+      </li>
+      <li>
+        <p>In action list: “Script: Nabla Looper Arranged Items (Toggle Monitor) .lua”</p>
+      </li>
+      <li>
+        <p>Item Color:&nbsp;<img src="./Nabla-fork_files/lSuP0XG.png" alt=""></p>
+      </li>
+      <li>
+        <p>Take Marker: Monitor</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Playback (normal)</strong>:&nbsp; This is the default state when creating an item.</p>
+
+    <ul>
+      <li>
+        <p>Any of the above actions or buttons can return an item to its normal or playback state.</p>
+      </li>
+      <li>
+        <p>Item color: The color of the track or the item color predefined in the REAPER settings.</p>
+      </li>
+      <li>
+        <p>No Take Marker.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="item-creation">Item Creation</h1>
+
+<blockquote>
+  <p>Notes:</p>
+
+  <p>Before you start creating an arrangement, it’s important to consider the following:</p>
+
+  <ol>
+    <li>
+      <p>The first Record/Monitor Item, must begin at least on the second bar.</p>
+    </li>
+    <li>
+      <p>There cannot be contiguous Record/Monitor Items in the same track, the solution to this is explained in the “Organizing Tracks” section.</p>
+    </li>
+  </ol>
+
+  <p><img src="./Nabla-fork_files/zCva7xA.png" width="602" height="343" class="jop-noMdConv" style="margin-left: 0px; margin-top: 0px;"></p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>Create a track.</p>
+  </li>
+  <li>
+    <p>Click on an empty area in the “Arrange” view.</p>
+  </li>
+  <li>
+    <p>Hold down the ctrl or cmd key, and drag to draw an item of the desired lenght.</p>
+  </li>
+  <li>
+    <p>Select this new item and rename it.</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <ul>
+      <li>You can use the rename tool that is installed with Nabla Looper, in the toolbar: <img src="./Nabla-fork_files/l522TBy.png" width="64" height="34" style="margin-left: 0px; margin-top: 0px;" class="jop-noMdConv">&nbsp; or assign a shortcut to “Script: Nabla Looper Arranged Items (Rename) .lua” in the action list.</li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>Set the item type with the buttons or actions seen before.</p>
+  </li>
+  <li>
+    <p>Duplicate this item and toggle it to “Playback” type or create a new one with the same name, adjust its size and distribute it in your arrangement. You can create as many “Playback Items” as necessary, even place them on other tracks.</p>
+  </li>
+</ol>
+
+<p><img src="./Nabla-fork_files/Z00PSjl.gif" width="804" height="458" class="jop-noMdConv" style="margin-left: 0px; margin-top: 0px;"></p>
+
+<h1 id="organizing-tracks">Organizing Tracks</h1>
+
+<p>In the previous example, we showed the simplest structure of a track with Record/Playback Items. To create a more complex arrangement, we need a folder-based track structure, for each of the Audio or MIDI input to be used.</p>
+
+<p>In the track folder, we will insert the effects chain or virtual instruments, while the “children” tracks, will be containers for Record/Monitor/Playback items. The audio or MIDI of these nested tracks, will pass through the effects that we have inserted in the parent folder.</p>
+
+<p>Creating a track template:</p>
+
+<ol>
+  <li>
+    <p>Create two or more tracks.</p>
+  </li>
+  <li>
+    <p>Shift-click to select the tracks that will be the “children”, drag them to the track that will be the Folder.</p>
+
+    <ul>
+      <li>
+        <p>The lower tracks will shift slightly to the right, denoting that they are now “children”.</p>
+      </li>
+      <li>
+        <p>The parent track becomes the “bus” through which the signal of the nested tracks will flow.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Insert your effects chain in the parent track.</p>
+  </li>
+  <li>
+    <p>Set the same audio or midi input for the nested tracks.</p>
+  </li>
+  <li>
+    <p>Create an arrangement and repeat the process for each of the VSTi’s or Audio Effects to be used.</p>
+  </li>
+</ol>
+
+<p>In the Audio “children” tracks, you can insert additional effects and adjust the volume and pan parameters, this way with a single audio line you can create very elaborate arrangements.</p>
+
+<p>MIDI “children” tracks are only containers and any adjustments or automation must be done in the main track.</p>
+
+<p><img src="./Nabla-fork_files/py5EHl6.gif" alt="" width="801" height="457"></p>
+
+<h1 id="running-nabla-looper">Running Nabla Looper</h1>
+
+<p>To start the session, press the “Arranged Mode” button or assign a shortcut to “Script: Nabla Looper Arranged Mode.lua” in the action list.</p>
+
+<p>If the project has not yet been saved, you will be prompted to do so. After saving, run “Arranged Mode” again.</p>
+
+<p>Playback will start and the actions that you have defined in your arrangement with the different item types, will be automatically executed.</p>
+
+<p>To stop the session, press the “Arranged Mode” button again or press the assigned shortcut. The first time you do this, a window will be displayed, in which you must check the option “Remember my answer for this script” and click on “Terminate instances “ (you can also stop Nabla with the stop button on the REAPER transport bar).</p>
+
+<p><img src="./Nabla-fork_files/aBpGiJA.gif" width="494" height="148" style="margin-left: 0px; margin-top: 0px;" class="jop-noMdConv"></p>
+
+<h1 id="takes-system">Takes System</h1>
+
+<p>Each time a section is recorded, a new take will be created and shown by adding the string “TK: ##” at the end of the name.</p>
+
+<p>To manage these Takes, you must assign shortcuts to one of the following scripts in the action list:</p>
+
+<ul>
+  <li>
+    <p><strong>Switch Take</strong>: Select between the takes associated with an item. The available scripts are:</p>
+
+    <ul>
+      <li>
+        <p>Script: Nabla Looper Arranged Takes (Switch Take - Item under mouse) .lua</p>
+      </li>
+      <li>
+        <p>Script: Nabla Looper Arranged Takes (Switch Take - Selected item) .lua</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Delete Take</strong>: Deletes a take from the list and its associated file on the hard drive. Use with caution! There is no undo point for this action. The available scripts are:</p>
+
+    <ul>
+      <li>
+        <p>Script: Nabla Looper Arranged Takes (Delete Take no prompting - Item under mouse) .lua</p>
+      </li>
+      <li>
+        <p>Script: Nabla Looper Arranged Takes (Delete Take no prompting - Selected item) .lua</p>
+      </li>
+      <li>
+        <p>Script: Nabla Looper Arranged Takes (Delete Take - Item under mouse) .lua</p>
+      </li>
+      <li>
+        <p>Script: Nabla Looper Arranged Takes (Delete Take - Selected item) .lua</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>It is recommended to eliminate the Takes that are not used and leave only one or two for reference, this way, your projects will be very light-weight and you will not waste hard drive space.</p>
+
+<p><img src="./Nabla-fork_files/EioAutU.gif" width="799" height="450" class="jop-noMdConv" style="margin-left: 0px; margin-top: 0px;"></p>
+
+<h1 id="clear-items">Clear items</h1>
+
+<p>Before starting a new recording, you can clear the items, so that the active take is not played: Use the button “Clear Items” or assign a shortcut to “Script: Nabla Looper Arranged Items (Clear) .lua” in the action list (this does not delete the Take, it merely hides it).</p>
+
+<p>The items that will be cleared are those that have an associated “Record Item”.</p>
+
+<p>A good practice when building your session, is to record just one section until you have a good take, remove the unsuitable ones, return the item to “Playback” type, and then add another section and repeat the process.</p>
+
+<p><img src="./Nabla-fork_files/wzjajJB.gif" width="799" height="450" class="jop-noMdConv" style="margin-left: 0px; margin-top: 0px;"></p>
+
+<h1 id="practice-mode">Practice mode</h1>
+
+<p>In practice mode, when you stop the session, the takes will be automatically deleted and the items will be cleared.</p>
+
+<p>You can activate the practice mode in the Arranged Mode settings, by checking the “Practice Mode” option.</p>
+
+
+      
+    </div>
+    <script src="./Nabla-fork_files/anchor.min.js.Download" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
+</body></html>
